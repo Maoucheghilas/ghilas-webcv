@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghilas MAOUCHE – Consultant informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Ghilas MAOUCHE</div>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#missions">Missions</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section Accueil -->
+  <section id="accueil" class="section hero">
+    <img src="asserts/images/img1.jpeg" alt="Photo de profil" class="profile-pic" />
+    <h1>Ghilas MAOUCHE – Consultant informatique</h1>
+    <h2>Spécialisé en développement, DevOps, DevSecOps et infrastructure cloud.</h2>
+    <p>
+      Je vous accompagne dans la réussite de vos projets numériques, 
+      de la conception à la mise en production. Fort d’une expertise technique pointue et d’une approche orientée résultats, 
+      je transforme vos idées en solutions robustes, sécurisées et évolutives.
+    </p>
+    <a href="#contact" class="btn">Me contacter</a>
+  </section>
+
+  <!-- Section Certifications -->
+  <section id="certifications" class="section">
+    <h2>🎓 Diplômes & Certifications</h2>
+    <div class="diplomas">
+      <div class="diploma">
+        <img src="asserts/images/img2-angers.png" alt="Université d’Angers" />
+        <br>
+        <p>Licence Informatique – Université d’Angers, France</p>
+      </div>
+      <div class="diploma">
+        <img src="asserts/images/img2-upec.png" alt="UPEC" />
+        <p>Master Logiciel sur en alternance – UPEC Créteil, France</p>
+      </div>
+    </div>
+    <div class="certifications-grid">
+      <div class="cert-card" onclick="openModal('ckad')">Certified Kubernetes Application Developer (CKAD)</div>
+      <div class="cert-card"onclick="openModal('sparkCer')">Spark</div>
+      <div class="cert-card" onclick="openModal('bigCert')">Big Data</div>
+    </div>
+  </section>
+
+  <!-- Section Missions -->
+  <section id="missions" class="section">
+    <h2>🚀 Missions réalisées</h2>
+    <div class="missions-grid">
+      <div class="mission-card" onclick="openModal('devops')">🛠️ DevOps & CI/CD</div>
+      <div class="mission-card" onclick="openModal('infra')">☁️ Infrastructure & Cloud Native</div>
+      <div class="mission-card" onclick="openModal('api')">💻 Développement</div>
+      <div class="mission-card" onclick="openModal('securite')">🔐 Sécurité Applicative (DevSecOps)</div>
+      <div class="mission-card" onclick="openModal('chatbot')">🤖 Intelligence Artificielle & Chatbot</div>
+      <div class="mission-card" onclick="openModal('bigdata')">📊 Big Data</div>
+    </div>
+  </section>
+
+  <!-- Section Services -->
+  <section id="services" class="section">
+    <h2>🛠️ Services & Expertise</h2>
+    <div class="missions-grid">
+      <div class="mission-card" onclick="openModal('devExp')" >💡 Développement Backend</div>
+      <div class="mission-card" onclick="openModal('devOpsExp')">⚙️ DevOps & Automatisation</div>
+      <div class="mission-card" onclick="openModal('infraExp')">☁️ Infrastructure Cloud</div>
+      <div class="mission-card" onclick="openModal('secExp')">🔐 Sécurité Applicative (DevSecOps)</div>
+      <div class="mission-card" onclick="openModal('conExp')">🧭 Conseil & Accompagnement Méthodologique</div>
+    </div>
+  </section>
+
+<!-- Section Contact -->
+<section id="contact" class="section">
+  <h2>📬 Contacts</h2>
+  <div class="contact-info">
+    <p>Email : <a href="mailto:Ghilasmaouche89@gmail.com">Ghilasmaouche89@gmail.com</a></p>
+    <p>Téléphone : <a href="tel:+33621832019">+33 6 21 83 20 19</a></p>
+    <p>WhatsApp : <a href="https://wa.me/33621832019" target="_blank">Envoyer un message</a></p>
+    <p>LinkedIn : <a href="https://www.linkedin.com/in/maouche-ghilas-1a60321b9/" target="_blank">Voir le profil</a></p>
+  </div>
+</section>
+
+
+  <!-- Mentions légales -->
+  <footer id="mentions">
+    <p>© 2025 Ghilas – Consultant informatique. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Modale -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
