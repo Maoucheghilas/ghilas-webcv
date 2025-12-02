@@ -1,3 +1,46 @@
+/* Style de base */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Cacher le bouton sur grand écran */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Mode mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* cacher le menu */
+    flex-direction: column;
+    background: #f4f4f4;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex; /* afficher quand actif */
+  }
+
+  .menu-toggle {
+    display: block; /* afficher le bouton hamburger */
+  }
+}
+
 /* ======= Variables de couleur ======= */
 :root {
   --bleu-fonce: #0a1f44;
