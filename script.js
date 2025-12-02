@@ -1,4 +1,12 @@
 // === Gestion des modales ===
+const toggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+toggle.addEventListener("click", (e) => {
+  e.preventDefault();
+  navLinks.classList.toggle("active");
+});
+
 
 // Contenu des modales par identifiant
 const modalContent = {
