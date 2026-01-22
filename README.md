@@ -13,7 +13,7 @@ Il a pour objectif de mettre en avant mon parcours, mes compétences, mes certif
 - **Services & Expertise** : accompagnement en backend, DevOps, cloud, sécurité et conseil.  
 - **Contact** : email, téléphone, WhatsApp et profil LinkedIn.  
 - **Design responsive** : adapté aux différents écrans (ordinateur, tablette, mobile).  
-- **Modales interactives** : affichage détaillé des missions et certifications.  
+- **Modales interactives** : affichage détaillé des missions et certifications.   
 
 ---
 
